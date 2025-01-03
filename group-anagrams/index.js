@@ -5,6 +5,9 @@
 var groupAnagrams = function (strList) {
 	const map = new Map();
 	for (let i = 0; i < strList.length; i++) {
+		// 
+		// splice -- index, num 修改原数组
+		// slice -- [) 新数组
 		// 请注意这里 split('') 不加的话就是一个copy
 		// join('') 不加的话就是,
 		const sortedStr = strList[i].split('').sort().join('');
